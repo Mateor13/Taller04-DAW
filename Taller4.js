@@ -99,4 +99,26 @@ console.log(`La categoria 5 es: ${categoria05}`)
 console.log("\n")
 
 //Desestructuracion de un arreglo anidado
-const categorias = ["Detectores",]
+const categorias = ["Detectores","Hubs"]
+smartHome.push(categorias)
+const arreglo1 = smartHome[5]
+const arreglo2 = arreglo1[0]
+console.log(arreglo2)
+console.log(smartHome)
+//Operador Rest
+const [audifonos, sillasGamers, ...mouse] = [["BENGOO G9000 Auriculares", "Razer BlackShark V2 X"],
+["Dowinx", "BestOffice"], ["Logitech G 305", "Razer Basilisk V3"],["Acer Nitro V", "MSI Katana A15 AI "]]
+console.log("\n")
+console.log(audifonos)
+console.log("\n")
+console.log(sillasGamers)
+console.log("\n")
+console.log(mouse)
+console.log("\n")
+
+//Operador Spread
+const clientesFrecuentes = ["Mireya","Mateo","Anthony","Paul","Ariel","Matias"]
+const nombreDeLosProductosAdquiridos = ["Falda negra con pliegues","Forro para celular","Teclado gamer con luces led","Parlantes con luces led",
+    "Jeans con bolsillos azulkes clasicos",'Manteles para vasos y platos']
+const informacionCompleta = [...clientesFrecuentes,...nombreDeLosProductosAdquiridos]
+console.log(informacionCompleta);
